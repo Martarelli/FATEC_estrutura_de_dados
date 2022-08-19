@@ -1,0 +1,15 @@
+D:\Repositórios - FATEC\Estrutura de dados\exercicio1\bin\Debug\net6.0\exercicio1.exe
+D:\Repositórios - FATEC\Estrutura de dados\exercicio1\bin\Debug\net6.0\exercicio1.deps.json
+D:\Repositórios - FATEC\Estrutura de dados\exercicio1\bin\Debug\net6.0\exercicio1.runtimeconfig.json
+D:\Repositórios - FATEC\Estrutura de dados\exercicio1\bin\Debug\net6.0\exercicio1.dll
+D:\Repositórios - FATEC\Estrutura de dados\exercicio1\bin\Debug\net6.0\exercicio1.pdb
+D:\Repositórios - FATEC\Estrutura de dados\exercicio1\obj\Debug\net6.0\exercicio1.csproj.AssemblyReference.cache
+D:\Repositórios - FATEC\Estrutura de dados\exercicio1\obj\Debug\net6.0\exercicio1.GeneratedMSBuildEditorConfig.editorconfig
+D:\Repositórios - FATEC\Estrutura de dados\exercicio1\obj\Debug\net6.0\exercicio1.AssemblyInfoInputs.cache
+D:\Repositórios - FATEC\Estrutura de dados\exercicio1\obj\Debug\net6.0\exercicio1.AssemblyInfo.cs
+D:\Repositórios - FATEC\Estrutura de dados\exercicio1\obj\Debug\net6.0\exercicio1.csproj.CoreCompileInputs.cache
+D:\Repositórios - FATEC\Estrutura de dados\exercicio1\obj\Debug\net6.0\exercicio1.dll
+D:\Repositórios - FATEC\Estrutura de dados\exercicio1\obj\Debug\net6.0\refint\exercicio1.dll
+D:\Repositórios - FATEC\Estrutura de dados\exercicio1\obj\Debug\net6.0\exercicio1.pdb
+D:\Repositórios - FATEC\Estrutura de dados\exercicio1\obj\Debug\net6.0\exercicio1.genruntimeconfig.cache
+D:\Repositórios - FATEC\Estrutura de dados\exercicio1\obj\Debug\net6.0\ref\exercicio1.dll
