@@ -23,46 +23,50 @@ while (op != "3")
         Console.WriteLine("3 - Impares");
         Console.WriteLine("4 - Somatório");
         string op2 = Console.ReadLine();
-        if (op2 == "1")
-        {
+        if (op2 == "1"){
             Console.WriteLine("De " + nI + " até " + nF + " em ordem crescente:");
             crescente(nI, nF);
-        } else if (op2 == "2") {
+        } else if (op2 == "2"){
             Console.WriteLine("De " + nI + " até " + nF + " em ordem decrescente:");
             decrescente(nI, nF);
-        } else if (op2 == "3") {
+        } else if (op2 == "3"){
             Console.WriteLine("Números impares de " + nI + " até " + nF + ":");
             impares(nI, nF);
+        } else if (op2 == "4"){
+            Console.WriteLine("O somaatório de todos os números de " + nI + " até " + nF + ":");
+            somatorio(nI, nF);
         }
     }
     Console.ReadKey();
 }
 
 void crescente(int nI, int nF){
-    if (nI <= nF)
-    {
+    if (nI <= nF){
         Console.WriteLine(nI);
         crescente(nI+1,nF);
     }
 }
 
 void decrescente(int nI, int nF){
-    if (nF >= nI)
-    {
+    if (nF >= nI){
         Console.WriteLine(nF);
         decrescente(nI,nF-1);
     }
 }
 
 void impares(int nI, int nF){
-    if (nI <= nF)
-    {
-        if (nI % 2 != 0)
-        {
+    if (nI <= nF){
+        if (nI % 2 != 0){
             Console.WriteLine(nI);
         }
         impares(nI + 1, nF);
     }
 }
 
+int somatorio(int nI, int nF){
+    if(nI <= nF){
+        return 0;
+    }
+    return nI + somatorio(nI + 1, nF);
+}
 
