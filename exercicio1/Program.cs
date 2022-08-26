@@ -44,9 +44,11 @@ void crescente(int nI, int nF){
 }
 
 void decrescente(int nI, int nF){
-    if (nF <= nI)
+    if (nF >= nI)
     {
         Console.WriteLine(nF);
-        crescente(nI,nF-1);
+        decrescente(nI,nF-1);
     }
 }
+
+
