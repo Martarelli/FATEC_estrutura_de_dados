@@ -26,10 +26,13 @@ while (op != "3")
         if (op2 == "1")
         {
             Console.WriteLine("De " + nI + " até " + nF + " em ordem crescente:");
-            crescente(nI,nF);
+            crescente(nI, nF);
         } else if (op2 == "2") {
             Console.WriteLine("De " + nI + " até " + nF + " em ordem decrescente:");
-            decrescente(nI,nF);
+            decrescente(nI, nF);
+        } else if (op2 == "3") {
+            Console.WriteLine("Números impares de " + nI + " até " + nF + ":");
+            impares(nI, nF);
         }
     }
     Console.ReadKey();
@@ -48,6 +51,17 @@ void decrescente(int nI, int nF){
     {
         Console.WriteLine(nF);
         decrescente(nI,nF-1);
+    }
+}
+
+void impares(int nI, int nF){
+    if (nI <= nF)
+    {
+        if (nI % 2 != 0)
+        {
+            Console.WriteLine(nI);
+        }
+        impares(nI + 1, nF)
     }
 }
 
