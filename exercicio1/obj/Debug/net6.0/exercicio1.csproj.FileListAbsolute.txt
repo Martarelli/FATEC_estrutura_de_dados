@@ -13,3 +13,18 @@ D:\Repositórios - FATEC\Estrutura de dados\exercicio1\obj\Debug\net6.0\refint\e
 D:\Repositórios - FATEC\Estrutura de dados\exercicio1\obj\Debug\net6.0\exercicio1.pdb
 D:\Repositórios - FATEC\Estrutura de dados\exercicio1\obj\Debug\net6.0\exercicio1.genruntimeconfig.cache
 D:\Repositórios - FATEC\Estrutura de dados\exercicio1\obj\Debug\net6.0\ref\exercicio1.dll
+C:\Users\Martarelli\OneDrive - Fatec Centro Paula Souza\Analise e Desenvolvimento de Sistemas\Matérias\Estruturas de Dados\FATEC_estrutura_de_dados\exercicio1\obj\Debug\net6.0\exercicio1.csproj.AssemblyReference.cache
+C:\Users\Martarelli\OneDrive - Fatec Centro Paula Souza\Analise e Desenvolvimento de Sistemas\Matérias\Estruturas de Dados\FATEC_estrutura_de_dados\exercicio1\obj\Debug\net6.0\exercicio1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Martarelli\OneDrive - Fatec Centro Paula Souza\Analise e Desenvolvimento de Sistemas\Matérias\Estruturas de Dados\FATEC_estrutura_de_dados\exercicio1\obj\Debug\net6.0\exercicio1.AssemblyInfoInputs.cache
+C:\Users\Martarelli\OneDrive - Fatec Centro Paula Souza\Analise e Desenvolvimento de Sistemas\Matérias\Estruturas de Dados\FATEC_estrutura_de_dados\exercicio1\obj\Debug\net6.0\exercicio1.AssemblyInfo.cs
+C:\Users\Martarelli\OneDrive - Fatec Centro Paula Souza\Analise e Desenvolvimento de Sistemas\Matérias\Estruturas de Dados\FATEC_estrutura_de_dados\exercicio1\obj\Debug\net6.0\exercicio1.csproj.CoreCompileInputs.cache
+C:\Users\Martarelli\OneDrive - Fatec Centro Paula Souza\Analise e Desenvolvimento de Sistemas\Matérias\Estruturas de Dados\FATEC_estrutura_de_dados\exercicio1\obj\Debug\net6.0\exercicio1.dll
+C:\Users\Martarelli\OneDrive - Fatec Centro Paula Souza\Analise e Desenvolvimento de Sistemas\Matérias\Estruturas de Dados\FATEC_estrutura_de_dados\exercicio1\obj\Debug\net6.0\refint\exercicio1.dll
+C:\Users\Martarelli\OneDrive - Fatec Centro Paula Souza\Analise e Desenvolvimento de Sistemas\Matérias\Estruturas de Dados\FATEC_estrutura_de_dados\exercicio1\obj\Debug\net6.0\exercicio1.pdb
+C:\Users\Martarelli\OneDrive - Fatec Centro Paula Souza\Analise e Desenvolvimento de Sistemas\Matérias\Estruturas de Dados\FATEC_estrutura_de_dados\exercicio1\bin\Debug\net6.0\exercicio1.exe
+C:\Users\Martarelli\OneDrive - Fatec Centro Paula Souza\Analise e Desenvolvimento de Sistemas\Matérias\Estruturas de Dados\FATEC_estrutura_de_dados\exercicio1\bin\Debug\net6.0\exercicio1.deps.json
+C:\Users\Martarelli\OneDrive - Fatec Centro Paula Souza\Analise e Desenvolvimento de Sistemas\Matérias\Estruturas de Dados\FATEC_estrutura_de_dados\exercicio1\bin\Debug\net6.0\exercicio1.runtimeconfig.json
+C:\Users\Martarelli\OneDrive - Fatec Centro Paula Souza\Analise e Desenvolvimento de Sistemas\Matérias\Estruturas de Dados\FATEC_estrutura_de_dados\exercicio1\bin\Debug\net6.0\exercicio1.dll
+C:\Users\Martarelli\OneDrive - Fatec Centro Paula Souza\Analise e Desenvolvimento de Sistemas\Matérias\Estruturas de Dados\FATEC_estrutura_de_dados\exercicio1\bin\Debug\net6.0\exercicio1.pdb
+C:\Users\Martarelli\OneDrive - Fatec Centro Paula Souza\Analise e Desenvolvimento de Sistemas\Matérias\Estruturas de Dados\FATEC_estrutura_de_dados\exercicio1\obj\Debug\net6.0\exercicio1.genruntimeconfig.cache
+C:\Users\Martarelli\OneDrive - Fatec Centro Paula Souza\Analise e Desenvolvimento de Sistemas\Matérias\Estruturas de Dados\FATEC_estrutura_de_dados\exercicio1\obj\Debug\net6.0\ref\exercicio1.dll

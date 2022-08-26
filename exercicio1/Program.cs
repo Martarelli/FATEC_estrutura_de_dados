@@ -61,7 +61,7 @@ void impares(int nI, int nF){
         {
             Console.WriteLine(nI);
         }
-        impares(nI + 1, nF)
+        impares(nI + 1, nF);
     }
 }
 
