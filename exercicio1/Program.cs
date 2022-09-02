@@ -34,7 +34,8 @@ while (op != "3")
             impares(nI, nF);
         } else if (op2 == "4"){
             Console.WriteLine("O somaatório de todos os números de " + nI + " até " + nF + ":");
-            somatorio(nI, nF);
+            int soma = somatorio(nI, nF);
+            Console.WriteLine("A soma foi: " + soma);
         }
     }
     Console.ReadKey();
@@ -64,9 +65,10 @@ void impares(int nI, int nF){
 }
 
 int somatorio(int nI, int nF){
-    if(nI <= nF){
-        return 0;
+    if(nI < nF){
+        return nI + somatorio(nI + 1, nF);
+    } else {
+        return nI;
     }
-    return nI + somatorio(nI + 1, nF);
 }
 
