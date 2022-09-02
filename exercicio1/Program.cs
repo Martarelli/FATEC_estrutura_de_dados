@@ -9,8 +9,7 @@ while (op != "3")
     Console.Write("Digite a opção desejada: ");
     op = Console.ReadLine();
 
-    if (op == "1")
-    {
+    if (op == "1"){
         int nI, nF;
         Console.Write("Numero Inicial: ");
         nI = int.Parse(Console.ReadLine());
@@ -37,6 +36,18 @@ while (op != "3")
             int soma = somatorio(nI, nF);
             Console.WriteLine("A soma foi: " + soma);
         }
+    } else if (op == "2"){
+        int[] vetor = new int[5];
+        int i=0, n=1;
+        while(n != 0 && i < vetor.Length){
+            Console.WriteLine("Digite um número: ");
+            n = int.Parse(Console.ReadLine());
+            vetor[i] = n;
+            i++;
+        }
+        Console.WriteLine(vetor);
+        // int s = somaVetor(vetor, i);
+        // Console.WriteLine(s);
     }
     Console.ReadKey();
 }
