@@ -1,0 +1,15 @@
+C:\Users\rmart\OneDrive - Fatec Centro Paula Souza\Analise e Desenvolvimento de Sistemas\Matérias\Estruturas de Dados\FATEC_estrutura_de_dados\Exercicio 2 a 6\bin\Debug\net6.0\Exercicio 2 a 6.exe
+C:\Users\rmart\OneDrive - Fatec Centro Paula Souza\Analise e Desenvolvimento de Sistemas\Matérias\Estruturas de Dados\FATEC_estrutura_de_dados\Exercicio 2 a 6\bin\Debug\net6.0\Exercicio 2 a 6.deps.json
+C:\Users\rmart\OneDrive - Fatec Centro Paula Souza\Analise e Desenvolvimento de Sistemas\Matérias\Estruturas de Dados\FATEC_estrutura_de_dados\Exercicio 2 a 6\bin\Debug\net6.0\Exercicio 2 a 6.runtimeconfig.json
+C:\Users\rmart\OneDrive - Fatec Centro Paula Souza\Analise e Desenvolvimento de Sistemas\Matérias\Estruturas de Dados\FATEC_estrutura_de_dados\Exercicio 2 a 6\bin\Debug\net6.0\Exercicio 2 a 6.dll
+C:\Users\rmart\OneDrive - Fatec Centro Paula Souza\Analise e Desenvolvimento de Sistemas\Matérias\Estruturas de Dados\FATEC_estrutura_de_dados\Exercicio 2 a 6\bin\Debug\net6.0\Exercicio 2 a 6.pdb
+C:\Users\rmart\OneDrive - Fatec Centro Paula Souza\Analise e Desenvolvimento de Sistemas\Matérias\Estruturas de Dados\FATEC_estrutura_de_dados\Exercicio 2 a 6\obj\Debug\net6.0\Exercicio 2 a 6.csproj.AssemblyReference.cache
+C:\Users\rmart\OneDrive - Fatec Centro Paula Souza\Analise e Desenvolvimento de Sistemas\Matérias\Estruturas de Dados\FATEC_estrutura_de_dados\Exercicio 2 a 6\obj\Debug\net6.0\Exercicio 2 a 6.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rmart\OneDrive - Fatec Centro Paula Souza\Analise e Desenvolvimento de Sistemas\Matérias\Estruturas de Dados\FATEC_estrutura_de_dados\Exercicio 2 a 6\obj\Debug\net6.0\Exercicio 2 a 6.AssemblyInfoInputs.cache
+C:\Users\rmart\OneDrive - Fatec Centro Paula Souza\Analise e Desenvolvimento de Sistemas\Matérias\Estruturas de Dados\FATEC_estrutura_de_dados\Exercicio 2 a 6\obj\Debug\net6.0\Exercicio 2 a 6.AssemblyInfo.cs
+C:\Users\rmart\OneDrive - Fatec Centro Paula Souza\Analise e Desenvolvimento de Sistemas\Matérias\Estruturas de Dados\FATEC_estrutura_de_dados\Exercicio 2 a 6\obj\Debug\net6.0\Exercicio 2 a 6.csproj.CoreCompileInputs.cache
+C:\Users\rmart\OneDrive - Fatec Centro Paula Souza\Analise e Desenvolvimento de Sistemas\Matérias\Estruturas de Dados\FATEC_estrutura_de_dados\Exercicio 2 a 6\obj\Debug\net6.0\Exercicio 2 a 6.dll
+C:\Users\rmart\OneDrive - Fatec Centro Paula Souza\Analise e Desenvolvimento de Sistemas\Matérias\Estruturas de Dados\FATEC_estrutura_de_dados\Exercicio 2 a 6\obj\Debug\net6.0\refint\Exercicio 2 a 6.dll
+C:\Users\rmart\OneDrive - Fatec Centro Paula Souza\Analise e Desenvolvimento de Sistemas\Matérias\Estruturas de Dados\FATEC_estrutura_de_dados\Exercicio 2 a 6\obj\Debug\net6.0\Exercicio 2 a 6.pdb
+C:\Users\rmart\OneDrive - Fatec Centro Paula Souza\Analise e Desenvolvimento de Sistemas\Matérias\Estruturas de Dados\FATEC_estrutura_de_dados\Exercicio 2 a 6\obj\Debug\net6.0\Exercicio 2 a 6.genruntimeconfig.cache
+C:\Users\rmart\OneDrive - Fatec Centro Paula Souza\Analise e Desenvolvimento de Sistemas\Matérias\Estruturas de Dados\FATEC_estrutura_de_dados\Exercicio 2 a 6\obj\Debug\net6.0\ref\Exercicio 2 a 6.dll
