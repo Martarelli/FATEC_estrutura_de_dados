@@ -12,12 +12,38 @@ while (op != "9"){
     Console.Write("Digite a opção desejada: ");
     op = Console.ReadLine();
 
+    switch(op){
+        case "1":
+            Console.WriteLine("Informe a base: ");
+            int x = int.Parse(Console.ReadLine());
+            Console.WriteLine("Informe o expoente: ");
+            int y = int.Parse(Console.ReadLine());
+            int resultado = exponencial(x,y);
+            Console.WriteLine("O exponencial de " + x + " elevado a " + y + " é igual a " + resultado + ".");
+            break;
+        case "2":
+            break;
+        case "3":
+            break;
+        case "4":
+            break;
+        case "5":
+            break;
+        default:
+            break;
+    }
 
     Console.ReadKey();
 }
 
-void exponencial(){
-    
+
+int exponencial(int x, int y){
+    if(y > 1){
+        return x * exponencial(x, y-1);
+    } else {
+        return x;
+    }
+
 }
 
 void iterativa(){
