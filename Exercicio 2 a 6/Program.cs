@@ -51,6 +51,10 @@ while (op != "9"){
             }
             break;
         case "5":
+            Console.Write("Informe o número que você deseja converter em binário: ");
+            x = int.Parse(Console.ReadLine());
+            Console.Write($"O número {x} em binário é: ");
+            conversor(x);
             break;
         default:
             break;
@@ -105,6 +109,9 @@ int fibonacciRecursive(int x){
     }
 }
 
-void conversor(){
-
+void conversor(int x){
+    if(x > 0){
+        conversor(x / 2);
+        Console.Write(x % 2);
+    }
 }
