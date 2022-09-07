@@ -1,5 +1,5 @@
 ﻿// Crie um novo projeto para desenvolver um programa com um menu, cada opção do menu deve ser um exercício do 2 ao 6. Cada opção deve após receber entrada de dados, chamar uma função recursiva e exibir o resultado. O programa deve ser implementado em C# console. Submeta como resposta somente o arquivo Program.cs (não compactar).
-string op = "0";
+string? op = "0", op2 = "0";
 while (op != "9"){
     Console.Clear();
     Console.WriteLine("MENU PRINCIPAL");
@@ -39,7 +39,16 @@ while (op != "9"){
         case "4":
             Console.Write("Informe qual o termo da série de Fibonacci você deseja: ");
             x = int.Parse(Console.ReadLine());
-            Console.WriteLine($"O termo da série de Fibonacci você deseja é igual a {fibonacci(x)}.");
+            Console.WriteLine("Deseja utilizar qual tipo de função?");
+            Console.WriteLine("1 - Iterativa");
+            Console.WriteLine("2 - Recursiva");
+            Console.Write("Digite a opção desejada: ");
+            op2 = Console.ReadLine();
+            if(op2 == "1"){
+                Console.WriteLine($"{fibonacciIterative(x)}");
+            } else if (op2 == "2"){
+                Console.WriteLine($"{fibonacciRecursive(x)}");
+            }
             break;
         case "5":
             break;
@@ -76,8 +85,24 @@ int euclides(int n1, int n2){
     }
 }
 
-int fibonacci(int x){
-    return 0;
+int fibonacciIterative(int x){
+    int[] Fib = new int[x + 1]; 
+    Fib[0]= 0;  
+    Fib[1]= 1;
+    for(int i = 2; i <= x; i++){
+        Fib[i] = Fib[i - 2] + Fib[i - 1];
+    }
+    return Fib[x];
+}
+
+int fibonacciRecursive(int x){
+    if(x == 0){
+        return 0;
+    } else if(x == 1){
+        return 1;
+    } else {
+        return fibonacciRecursive(x - 1) + fibonacciRecursive(x -2);
+    }
 }
 
 void conversor(){
