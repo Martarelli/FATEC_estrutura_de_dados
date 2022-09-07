@@ -12,20 +12,28 @@ while (op != "9"){
     Console.Write("Digite a opção desejada: ");
     op = Console.ReadLine();
 
+    int x, y = 0;
+
     switch(op){
         case "1":
-            Console.WriteLine("Informe a base: ");
-            int x = int.Parse(Console.ReadLine());
-            Console.WriteLine("Informe o expoente: ");
-            int y = int.Parse(Console.ReadLine());
-            int resultado = exponencial(x,y);
-            Console.WriteLine("O exponencial de " + x + " elevado a " + y + " é igual a " + resultado + ".");
+            Console.Write("Informe a base: ");
+            x = int.Parse(Console.ReadLine());
+            Console.Write("Informe o expoente: ");
+            y = int.Parse(Console.ReadLine());
+            Console.WriteLine("O exponencial de " + x + " elevado a " + y + " é igual a " + exponencial(x,y) + ".");
             break;
         case "2":
+            Console.Write("Serão apresentado todos os números ao cubo de 1 até o número desejado.");
+            Console.Write("Informe o número de iterações: ");
+            x = int.Parse(Console.ReadLine());
+            iterativa(x);
             break;
         case "3":
             break;
         case "4":
+            Console.Write("Informe qual o termo da série de Fibonacci você deseja: ");
+            x = int.Parse(Console.ReadLine());
+            Console.WriteLine("O termo da série de Fibonacci você deseja é igual a " + fibonacci(x) + ".");
             break;
         case "5":
             break;
@@ -37,25 +45,29 @@ while (op != "9"){
 }
 
 
-int exponencial(int x, int y){
-    if(y > 1){
-        return x * exponencial(x, y-1);
+int exponencial(int numBase, int expoente){
+    if(expoente > 1){
+        return numBase * exponencial(numBase, expoente-1);
     } else {
-        return x;
+        return numBase;
     }
 
 }
 
-void iterativa(){
-
+void iterativa(int x){
+    if(x > 0){
+        iterativa(x-1);
+        int exp = x * x * x;
+        Console.WriteLine($"O número {x} ao cubo é: {exp}.");
+    }
 }
 
 void euclides(){
 
 }
 
-void fibonacci(){
-
+int fibonacci(int x){
+    return 0;
 }
 
 void conversor(){
