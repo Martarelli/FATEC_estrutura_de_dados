@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/exercicio1/exercicio1.csproj",
+                "${workspaceFolder}/Exercicio 2 a 6.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -19,7 +19,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/exercicio1/exercicio1.csproj",
+                "${workspaceFolder}/Exercicio 2 a 6.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -33,7 +33,7 @@
                 "watch",
                 "run",
                 "--project",
-                "${workspaceFolder}/exercicio1/exercicio1.csproj"
+                "${workspaceFolder}/Exercicio 2 a 6.csproj"
             ],
             "problemMatcher": "$msCompile"
         }
