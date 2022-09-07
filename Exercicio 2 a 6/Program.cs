@@ -20,20 +20,26 @@ while (op != "9"){
             x = int.Parse(Console.ReadLine());
             Console.Write("Informe o expoente: ");
             y = int.Parse(Console.ReadLine());
-            Console.WriteLine("O exponencial de " + x + " elevado a " + y + " é igual a " + exponencial(x,y) + ".");
+            Console.WriteLine($"O exponencial de {x} elevado a {y} é igual a {exponencial(x,y)}.");
             break;
         case "2":
-            Console.Write("Serão apresentado todos os números ao cubo de 1 até o número desejado.");
+            Console.WriteLine("Serão apresentado todos os números ao cubo de 1 até o número desejado.");
             Console.Write("Informe o número de iterações: ");
             x = int.Parse(Console.ReadLine());
             iterativa(x);
             break;
         case "3":
+            Console.WriteLine("Algoritmo de Euclides");
+            Console.Write("Informe um número: ");
+            x = int.Parse(Console.ReadLine());
+            Console.Write("Informe outro número: ");
+            y = int.Parse(Console.ReadLine());
+            Console.WriteLine($"O MDC entre o número {x} e o número {y} é {euclides(x,y)}.");
             break;
         case "4":
             Console.Write("Informe qual o termo da série de Fibonacci você deseja: ");
             x = int.Parse(Console.ReadLine());
-            Console.WriteLine("O termo da série de Fibonacci você deseja é igual a " + fibonacci(x) + ".");
+            Console.WriteLine($"O termo da série de Fibonacci você deseja é igual a {fibonacci(x)}.");
             break;
         case "5":
             break;
@@ -62,8 +68,12 @@ void iterativa(int x){
     }
 }
 
-void euclides(){
-
+int euclides(int n1, int n2){
+    if(n2 == 0){
+        return n1;
+    } else {
+        return euclides(n2, n1 % n2);
+    }
 }
 
 int fibonacci(int x){
