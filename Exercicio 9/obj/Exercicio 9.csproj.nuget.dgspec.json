@@ -1,27 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "/home/martarelli/Documents/FATEC_estrutura_de_dados/Exercicio 9/Exercicio 9.csproj": {}
+    "D:\\Renan\\Repositorios GIT\\FATEC_estrutura_de_dados\\Exercicio 9\\Exercicio 9.csproj": {}
   },
   "projects": {
-    "/home/martarelli/Documents/FATEC_estrutura_de_dados/Exercicio 9/Exercicio 9.csproj": {
+    "D:\\Renan\\Repositorios GIT\\FATEC_estrutura_de_dados\\Exercicio 9\\Exercicio 9.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/martarelli/Documents/FATEC_estrutura_de_dados/Exercicio 9/Exercicio 9.csproj",
+        "projectUniqueName": "D:\\Renan\\Repositorios GIT\\FATEC_estrutura_de_dados\\Exercicio 9\\Exercicio 9.csproj",
         "projectName": "Exercicio 9",
-        "projectPath": "/home/martarelli/Documents/FATEC_estrutura_de_dados/Exercicio 9/Exercicio 9.csproj",
-        "packagesPath": "/home/martarelli/.nuget/packages/",
-        "outputPath": "/home/martarelli/Documents/FATEC_estrutura_de_dados/Exercicio 9/obj/",
+        "projectPath": "D:\\Renan\\Repositorios GIT\\FATEC_estrutura_de_dados\\Exercicio 9\\Exercicio 9.csproj",
+        "packagesPath": "C:\\Users\\rmart\\.nuget\\packages\\",
+        "outputPath": "D:\\Renan\\Repositorios GIT\\FATEC_estrutura_de_dados\\Exercicio 9\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/martarelli/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\rmart\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
-        "sources": {
-          "https://api.nuget.org/v3/index.json": {}
-        },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
@@ -43,7 +40,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -52,7 +50,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/dotnet6-6.0.109/sdk/6.0.109/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
