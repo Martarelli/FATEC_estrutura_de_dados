@@ -1,8 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
-int topo = 0;
-
-const int MAX = 20;
+﻿const int MAX = 20;
 char[] pile = new char[MAX];
+int topo = 0;
 
 void Insere(char[] p, ref int t, char v)
 {
@@ -16,17 +14,26 @@ char Remove(char[] p, ref int t)
     return (p[t]);
 }
 
-string nome = "Jose da Silva ";
+string frase = "";
+Console.Write("Digite uma frase: ");
+frase = Console.ReadLine();
+frase = String.Format("{0} ",frase);
 int i = 0;
-while (i < nome.Length){
-    while(nome[i] != ' ' && i < nome.Length - 1){
-        Insere(pile, ref topo, nome[i]);
+while (i < frase.Length - 1)
+{
+    while (frase[i] != ' ' && i < frase.Length)
+    {
+        Insere(pile, ref topo, frase[i]);
         i++;
     }
-    while(topo > 0){
+
+    while (topo > 0)
+    {
         char c = Remove(pile, ref topo);
         Console.Write(c);
     }
     Console.Write(' ');
+
     i++;
-} 
+
+}
