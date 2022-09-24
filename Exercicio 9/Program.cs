@@ -16,10 +16,10 @@ char Remove(char[] p, ref int t)
     return (p[t]);
 }
 
-string nome = "Jose da Silva";
+string nome = "Jose da Silva ";
 int i = 0;
-while (i < nome.Length - 1 ){
-    while(nome[i] != ' ' && i < nome.Length){
+while (i < nome.Length){
+    while(nome[i] != ' ' && i < nome.Length - 1){
         Insere(pile, ref topo, nome[i]);
         i++;
     }
