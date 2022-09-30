@@ -1,0 +1,15 @@
+/home/martarelli/Documents/FATEC_estrutura_de_dados/Exercicio 13/obj/Debug/net6.0/Exercicio 13.csproj.AssemblyReference.cache
+/home/martarelli/Documents/FATEC_estrutura_de_dados/Exercicio 13/obj/Debug/net6.0/Exercicio 13.GeneratedMSBuildEditorConfig.editorconfig
+/home/martarelli/Documents/FATEC_estrutura_de_dados/Exercicio 13/obj/Debug/net6.0/Exercicio 13.AssemblyInfoInputs.cache
+/home/martarelli/Documents/FATEC_estrutura_de_dados/Exercicio 13/obj/Debug/net6.0/Exercicio 13.AssemblyInfo.cs
+/home/martarelli/Documents/FATEC_estrutura_de_dados/Exercicio 13/obj/Debug/net6.0/Exercicio 13.csproj.CoreCompileInputs.cache
+/home/martarelli/Documents/FATEC_estrutura_de_dados/Exercicio 13/bin/Debug/net6.0/Exercicio 13
+/home/martarelli/Documents/FATEC_estrutura_de_dados/Exercicio 13/bin/Debug/net6.0/Exercicio 13.deps.json
+/home/martarelli/Documents/FATEC_estrutura_de_dados/Exercicio 13/bin/Debug/net6.0/Exercicio 13.runtimeconfig.json
+/home/martarelli/Documents/FATEC_estrutura_de_dados/Exercicio 13/bin/Debug/net6.0/Exercicio 13.dll
+/home/martarelli/Documents/FATEC_estrutura_de_dados/Exercicio 13/bin/Debug/net6.0/ref/Exercicio 13.dll
+/home/martarelli/Documents/FATEC_estrutura_de_dados/Exercicio 13/bin/Debug/net6.0/Exercicio 13.pdb
+/home/martarelli/Documents/FATEC_estrutura_de_dados/Exercicio 13/obj/Debug/net6.0/Exercicio 13.dll
+/home/martarelli/Documents/FATEC_estrutura_de_dados/Exercicio 13/obj/Debug/net6.0/ref/Exercicio 13.dll
+/home/martarelli/Documents/FATEC_estrutura_de_dados/Exercicio 13/obj/Debug/net6.0/Exercicio 13.pdb
+/home/martarelli/Documents/FATEC_estrutura_de_dados/Exercicio 13/obj/Debug/net6.0/Exercicio 13.genruntimeconfig.cache
