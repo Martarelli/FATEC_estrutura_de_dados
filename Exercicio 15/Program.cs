@@ -17,13 +17,13 @@ string op;
 
 while (ligado)
 {
-    Console.WriteLine("***********CONTROLE DE PISTA***********");
+    Console.WriteLine("\n***********CONTROLE DE PISTA***********\n");
     Console.WriteLine("1 - Adicionar avião na fila");
     Console.WriteLine("2 - Consultar quantidade de aviões na fila");
     Console.WriteLine("3 - Autorizar decolagem");
     Console.WriteLine("4 - Consultar id dos aviões na fila");
     Console.WriteLine("5 - Consultar o primeiro avião da fila");
-    Console.WriteLine("Digite a opção desejada: ");
+    Console.Write("\nDigite a opção desejada: ");
     op = Console.ReadLine();
 
     if (op == "1")
@@ -54,19 +54,32 @@ while (ligado)
 }
 
 void adicionar(){
-    Console.WriteLine("***ADICIONAR AVIÃO NA FILA***");
+    Console.WriteLine("\n***ADICIONAR AVIÃO NA FILA***\n");
+    Console.Write("Digite o ID do avião que deseja adicionar: ");
+    int id = Convert.ToInt32(Console.ReadLine());
+    if (!EstaCheia(fim))
+    {
+        Insere(fila, ref fim, id);
+        Console.WriteLine("Avião ID {0} adicionado a fila com sucesso...", id);
+    } 
+    else 
+    {
+        Console.WriteLine("FILA CHEIA - Não foi possível adicionar o avião a fila...");
+    }
 }
 void qtdFila(){
-    Console.WriteLine("***CONSULTA DA QUANTIDADE DE AVIÕES NA FILA***");
+    Console.WriteLine("***\nCONSULTA DA QUANTIDADE DE AVIÕES NA FILA***\n");
+    int qtd = fim - inicio;
+    Console.WriteLine(qtd + " aviões na fila de espera...");
 }
 void autorizacao(){
-    Console.WriteLine("***AUTORIZAÇÃO DE DECOLAGEM***");
+    Console.WriteLine("\n***AUTORIZAÇÃO DE DECOLAGEM***\n");
 }
 void consultarIds(){
-    Console.WriteLine("***CONSULTA ID DOS AVIÕES NA FILA***");
+    Console.WriteLine("***\nCONSULTA ID DOS AVIÕES NA FILA***\n");
 }
 void consultarPrimeiroId(){
-    Console.WriteLine("***CONSULTA PRIMEIRO AVIÃO DA FILA***");
+    Console.WriteLine("***\nCONSULTA PRIMEIRO AVIÃO DA FILA***\n");
 }
 
 bool EstaVazia(int i, int f)
