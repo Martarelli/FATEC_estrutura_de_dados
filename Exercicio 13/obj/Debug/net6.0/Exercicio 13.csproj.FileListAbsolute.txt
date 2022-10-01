@@ -13,3 +13,18 @@
 /home/martarelli/Documents/FATEC_estrutura_de_dados/Exercicio 13/obj/Debug/net6.0/ref/Exercicio 13.dll
 /home/martarelli/Documents/FATEC_estrutura_de_dados/Exercicio 13/obj/Debug/net6.0/Exercicio 13.pdb
 /home/martarelli/Documents/FATEC_estrutura_de_dados/Exercicio 13/obj/Debug/net6.0/Exercicio 13.genruntimeconfig.cache
+D:\Renan\Repositorios GIT\FATEC_estrutura_de_dados\Exercicio 13\bin\Debug\net6.0\Exercicio 13.exe
+D:\Renan\Repositorios GIT\FATEC_estrutura_de_dados\Exercicio 13\bin\Debug\net6.0\Exercicio 13.deps.json
+D:\Renan\Repositorios GIT\FATEC_estrutura_de_dados\Exercicio 13\bin\Debug\net6.0\Exercicio 13.runtimeconfig.json
+D:\Renan\Repositorios GIT\FATEC_estrutura_de_dados\Exercicio 13\bin\Debug\net6.0\Exercicio 13.dll
+D:\Renan\Repositorios GIT\FATEC_estrutura_de_dados\Exercicio 13\bin\Debug\net6.0\Exercicio 13.pdb
+D:\Renan\Repositorios GIT\FATEC_estrutura_de_dados\Exercicio 13\obj\Debug\net6.0\Exercicio 13.csproj.AssemblyReference.cache
+D:\Renan\Repositorios GIT\FATEC_estrutura_de_dados\Exercicio 13\obj\Debug\net6.0\Exercicio 13.GeneratedMSBuildEditorConfig.editorconfig
+D:\Renan\Repositorios GIT\FATEC_estrutura_de_dados\Exercicio 13\obj\Debug\net6.0\Exercicio 13.AssemblyInfoInputs.cache
+D:\Renan\Repositorios GIT\FATEC_estrutura_de_dados\Exercicio 13\obj\Debug\net6.0\Exercicio 13.AssemblyInfo.cs
+D:\Renan\Repositorios GIT\FATEC_estrutura_de_dados\Exercicio 13\obj\Debug\net6.0\Exercicio 13.csproj.CoreCompileInputs.cache
+D:\Renan\Repositorios GIT\FATEC_estrutura_de_dados\Exercicio 13\obj\Debug\net6.0\Exercicio 13.dll
+D:\Renan\Repositorios GIT\FATEC_estrutura_de_dados\Exercicio 13\obj\Debug\net6.0\refint\Exercicio 13.dll
+D:\Renan\Repositorios GIT\FATEC_estrutura_de_dados\Exercicio 13\obj\Debug\net6.0\Exercicio 13.pdb
+D:\Renan\Repositorios GIT\FATEC_estrutura_de_dados\Exercicio 13\obj\Debug\net6.0\Exercicio 13.genruntimeconfig.cache
+D:\Renan\Repositorios GIT\FATEC_estrutura_de_dados\Exercicio 13\obj\Debug\net6.0\ref\Exercicio 13.dll
