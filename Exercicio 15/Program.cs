@@ -60,21 +60,36 @@ void adicionar(){
     if (!EstaCheia(fim))
     {
         Insere(fila, ref fim, id);
-        Console.WriteLine("Avião ID {0} adicionado a fila com sucesso...", id);
+        Console.WriteLine("Avião ID {0} adicionado a fila com sucesso.....", id);
     } 
     else 
     {
-        Console.WriteLine("FILA CHEIA - Não foi possível adicionar o avião a fila...");
+        Console.WriteLine("FILA CHEIA - Não foi possível adicionar o avião a fila.....");
     }
 }
+
 void qtdFila(){
     Console.WriteLine("***\nCONSULTA DA QUANTIDADE DE AVIÕES NA FILA***\n");
     int qtd = fim - inicio;
-    Console.WriteLine(qtd + " aviões na fila de espera...");
+    Console.WriteLine(qtd + " aviões na fila de espera.....");
 }
+
 void autorizacao(){
     Console.WriteLine("\n***AUTORIZAÇÃO DE DECOLAGEM***\n");
+    Console.WriteLine("Deseja autorizar a decolagem do avião ID {0}? S - Sim / N - não",fila[inicio]);
+    Console.Write("Digite a opção desejada: ");
+    string autorizado = Console.ReadLine();
+    if (autorizado == "S" || autorizado == "s")
+    {
+        int aviaoAutorizado = Remove(fila, ref inicio);
+        Console.WriteLine("Avião ID {0} autorizado a decolagem.....", aviaoAutorizado);
+    }
+    else
+    {
+        Console.WriteLine("Nenhum avião foi autorizado a decolar.....");
+    }
 }
+
 void consultarIds(){
     Console.WriteLine("***\nCONSULTA ID DOS AVIÕES NA FILA***\n");
 }
