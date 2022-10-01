@@ -6,6 +6,12 @@
 // e) Consultar o número do primeiro avião da fila
 // Construa um menu principal para oferecer essas operações ao usuário.
 
+
+const int MAX = 20;
+
+int[] fila = new int[MAX];
+int inicio = 0, fim = 0;
+
 bool ligado = true;
 string op;
 
@@ -62,4 +68,34 @@ void consultarIds(){
 void consultarPrimeiroId(){
     Console.WriteLine("***CONSULTA PRIMEIRO AVIÃO DA FILA***");
 }
+
+bool EstaVazia(int i, int f)
+{
+    if (i == f)
+        return true;
+    else
+        return false;
+}
+
+bool EstaCheia(int f)
+{
+    if (f == MAX)
+        return true;
+    else
+        return false;
+}
+
+void Insere(int[] q, ref int f, int v)
+{
+    q[f] = v;
+    f = f + 1;
+}
+
+int Remove(int[] q, ref int i)
+{
+    int v = q[i];
+    i = i + 1;
+    return (v);
+}
+
 
