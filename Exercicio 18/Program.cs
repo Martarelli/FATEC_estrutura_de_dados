@@ -29,7 +29,7 @@ while (op != "0")
     }
     else if (op2 == "2")
     {
-
+        alterar(lista);
     }
     else if (op2 == "3")
     {
@@ -76,6 +76,47 @@ tp_no Remove(ref tp_no l)
     return no;
 }
 
+void consulta(tp_no l, string np, ref tp_no ant, ref tp_no atu)
+{
+    ant = null;
+    atu = l;
+    while (atu != null && np != atu.nome)
+    {
+        ant = atu;
+        atu = atu.prox;
+    }
+}
+
+void alterar(tp_no l)
+{
+    string np;
+    tp_no atual = null;
+    tp_no anterior = null;
+    Console.Write("Digite o nome para consulta: ");
+    np = Console.ReadLine();
+    consulta(lista, np, ref anterior, ref atual);
+    if (atual != null)
+    {
+        Console.WriteLine("Dados Atuais");
+        Console.WriteLine("Nome: " + atual.nome);
+        Console.WriteLine("Idade: " + atual.idade);
+        Console.WriteLine("Zapzap: " + atual.whats);
+        Console.WriteLine("Digite os novos dados");
+        Console.Write("Nome:");
+        atual.nome = Console.ReadLine();
+        Console.Write("Idade");
+        atual.idade = Console.ReadLine();
+        Console.Write("Zapzap:");
+        atual.whats = Console.ReadLine();
+    }
+    else
+    {
+        Console.WriteLine("Cadastro não encontrado :( ...")
+    }
+
+
+
+}
 class tp_no
 {
     public string nome, idade, whats;
