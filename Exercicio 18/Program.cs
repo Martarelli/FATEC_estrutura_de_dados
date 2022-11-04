@@ -102,16 +102,16 @@ void alterar(tp_no l)
         Console.WriteLine("Idade: " + atual.idade);
         Console.WriteLine("Zapzap: " + atual.whats);
         Console.WriteLine("Digite os novos dados");
-        Console.Write("Nome:");
+        Console.Write("Nome: ");
         atual.nome = Console.ReadLine();
-        Console.Write("Idade");
+        Console.Write("Idade: ");
         atual.idade = Console.ReadLine();
-        Console.Write("Zapzap:");
+        Console.Write("Zapzap: ");
         atual.whats = Console.ReadLine();
     }
     else
     {
-        Console.WriteLine("Cadastro não encontrado :( ...")
+        Console.WriteLine("Cadastro não encontrado :( ...");
     }
 
 
