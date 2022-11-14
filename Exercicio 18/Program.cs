@@ -155,7 +155,7 @@ void Excluir(ref tp_no l)
             anterior.prox = atual.prox;
             atual.prox = null;
         }
-        Console.WriteLine("Registro Excluido com Sucesso...")
+        Console.WriteLine("Registro Excluido com Sucesso...");
     }
     else
     {
