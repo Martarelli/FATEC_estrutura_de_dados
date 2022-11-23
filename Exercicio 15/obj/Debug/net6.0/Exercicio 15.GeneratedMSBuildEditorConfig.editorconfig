@@ -7,8 +7,4 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Exercicio_15
-<<<<<<< HEAD
 build_property.ProjectDir = d:\Renan\Repositorios GIT\FATEC_estrutura_de_dados\Exercicio 15\
-=======
-build_property.ProjectDir = /home/martarelli/Documents/FATEC_estrutura_de_dados/Exercicio 15/
->>>>>>> 51c0beebaddfdf5a7fafa46e15cf1aed4b987b22
