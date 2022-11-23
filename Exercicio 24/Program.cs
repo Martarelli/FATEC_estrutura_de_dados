@@ -4,7 +4,7 @@
 // c)	Remover um valor digitado pelo usuário. Exiba a mensagem se removido com sucesso ou não encontrado
 // d)	Exibir todos os valores da árvore em ordem, pré ordem ou pós ordem
 
-tp_no raiz = null;
+tp_no raiz = null, x;
 string op = "1";
 string op2 = "";
 string opExibicao = "";
@@ -25,18 +25,29 @@ while (op != "0")
 
     if (op2 == "1")
     {
-        Console.Write("Digite o Valor a ser adicionado: ");
-        valor = Convert.ToInt32(Console.ReadLine());
-        Insere(ref raiz, valor);
+      Console.Write("Digite o Valor a ser adicionado: ");
+      valor = Convert.ToInt32(Console.ReadLine());
+      Insere(ref raiz, valor);
     }
     else if (op2 == "2")
     {
-        Console.Write("Digite o Valor a ser consultado: ");
-        valor = Convert.ToInt32(Console.ReadLine());
+      Console.Write("Digite o Valor a ser consultado: ");
+      valor = Convert.ToInt32(Console.ReadLine());
         
     }
     else if (op2 == "3")
     {
+      Console.Write("Digite o Valor a remover: ");
+      valor = Convert.ToInt32(Console.ReadLine());
+      x = Remove(ref raiz, valor);
+      if (x != null)
+      {
+         Console.WriteLine("Valor removido com sucesso");
+      }
+      else
+      {
+         Console.WriteLine("Valor não foi removido");
+      }
 
     }
     else if (op2 == "4")
