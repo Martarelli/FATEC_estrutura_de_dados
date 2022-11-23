@@ -33,7 +33,16 @@ while (op != "0")
     {
       Console.Write("Digite o Valor a ser consultado: ");
       valor = Convert.ToInt32(Console.ReadLine());
-        
+      x = Busca(raiz, valor);
+      if (x != null)
+      {
+         Console.WriteLine("Valor encontrado");
+      }
+      else
+      {
+         Console.WriteLine("Valor não encontrado");
+      }
+
     }
     else if (op2 == "3")
     {
