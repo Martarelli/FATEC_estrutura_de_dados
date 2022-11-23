@@ -7,6 +7,8 @@
 tp_no raiz = null;
 string op = "1";
 string op2 = "";
+string opExibicao = "";
+
 int valor;
 
 while (op != "0")
@@ -39,7 +41,21 @@ while (op != "0")
     }
     else if (op2 == "4")
     {
-
+      Console.WriteLine("1- Pré Ordem / 2- Pós Ordem");
+      Console.Write("Digite a opção desejada: ");
+      opExibicao = Console.ReadLine();
+      if (opExibicao == "1")
+      {
+         PreOrdem(raiz);
+      }
+      else if (opExibicao == "2")
+      {
+         PosOrdem(raiz);
+      }
+      else
+      {
+         Console.WriteLine("Opção inválida...");
+      }
     }
     else if (op2 == "0")
     {
@@ -100,6 +116,18 @@ tp_no Remove(ref tp_no r, int x)
       return Remove(ref r.esq, x);
    else
       return Remove(ref r.dir, x);
+}
+
+tp_no RetornaMaior(ref tp_no r)
+{
+   if (r.dir == null)
+   {
+      tp_no p = r;
+      r = r.esq;
+      return p;
+   }
+   else
+      return RetornaMaior(ref r.dir);
 }
 
 void PreOrdem(tp_no r)
