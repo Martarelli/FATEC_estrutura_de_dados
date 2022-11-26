@@ -4,3 +4,186 @@
 // Para inserir um novo registro, solicite a idade, nome e whats. Utilize a idade como chave.
 // Para alterar solicite a idade (chave) para ser utilizada na busca. Caso encontrada, informe o nome e o whats da pessoa. Após a consulta, o usuário pode atualizar somente o nome e o whats.
 // Para relatar, percorra o vetor do inicio ao fim e exiba todos os registros.
+
+const int N = 5;
+string op = "1", op2 = "1";
+int valor, pos;
+
+while (op != "0")
+{
+    Console.WriteLine("MENU PRINCIPAL\n");
+    Console.WriteLine("1 - Sem tratamento de colisão");
+    Console.WriteLine("2 - Tratamento de colisão Linear");
+    Console.WriteLine("3 - Tratamento de colisão com Lista Encadeada");
+    Console.WriteLine("0 - Sair");
+
+    Console.Write("Digite a opção desejada: ");
+    op = Console.ReadLine();
+
+    if (op == "1")
+    {
+      int[] vetorSemTratamento = new int[N];
+      op2 = "1";
+      while (op2 != "0")
+      {
+         Console.WriteLine("\nSEM TRATAMENTO DE COLISÃO\n");
+         Console.WriteLine("1 - Inserir Valor");
+         Console.WriteLine("2 - Alterar Valor");
+         Console.WriteLine("3 - Exibir Valores");
+         Console.WriteLine("0 - Sair");
+
+         Console.Write("\nDigite a opção desejada: ");
+         op2 = Console.ReadLine();
+
+         if (op2 == "1")
+         {
+            Console.Write("\nValor a ser adicionado: ");
+            valor = Convert.ToInt32(Console.ReadLine());
+            InsereLinear(vetorSemTratamento,valor);
+         }
+         else if (op2 == "2")
+         {
+            Console.Write("\nValor a ser alterado: ");
+            valor = Convert.ToInt32(Console.ReadLine());
+            pos = BuscaSemTratamento(valor);
+            if (vetorSemTratamento[pos] == valor)
+            {
+               Console.Write("\nNovo Valor: ");
+               valor = Convert.ToInt32(Console.ReadLine());
+               vetorSemTratamento[pos] = 0;
+               InsereLinear(vetorSemTratamento,valor);
+               Console.WriteLine("Valor alterado com sucesso");
+            }
+            else
+            {
+              Console.WriteLine("Valor não encontrado");
+            }
+         }
+         else if (op2 == "3")
+         {
+            foreach(int i in vetorSemTratamento){
+               Console.WriteLine(i);
+            }
+         }
+         else if (op2 == "0")
+         {
+            Console.WriteLine("Saindo do modulo da aplicação....");
+         }
+         else
+         {
+            Console.WriteLine("Opção inválida... Tente novamente...");
+         }
+      }
+
+    }
+    else if (op == "2")
+    {
+
+    }
+    else if (op == "3")
+    {
+
+    }
+    else if (op == "0")
+    {
+        Console.WriteLine("Encerrando a aplicação....");
+    }
+    else
+    {
+        Console.WriteLine("Opção inválida... Tente novamente...");
+    }
+}
+
+
+
+int Hash(int chave)
+{
+   return (chave % N);
+}
+
+void InsereSemTratamento(int[] v, int c)
+{
+   int pos = Hash(c);
+   v[pos] = c;
+}
+
+int BuscaSemTratamento(int c)
+{
+   int pos = Hash(c);
+   return pos;
+}
+
+
+
+
+
+void InsereLinear(int[] v, int c)
+{
+   int pos = Hash(c);
+   while (v[pos]  != 0)
+   {
+      pos++;
+      pos = pos % N;
+   }
+   v[pos] = c;
+}
+
+void InsereEncadeado(tp_no[] v, int c)
+{
+   tp_no no = new tp_no();
+   no.chave = c;
+   int pos = Hash(c);
+   if (v[pos] != null)
+      no.prox = v[pos];
+   v[pos] = no;
+}
+
+
+
+class tp_no
+{
+   public int chave;
+   public tp_no prox;
+
+}
+
+
+
+
+
+
+
+
+
+      // while (op2 != "0")
+      // {
+      //    Console.WriteLine("\nSEM TRATAMENTO DE COLISÃO\n");
+      //    Console.WriteLine("1 - Inserir Valor");
+      //    Console.WriteLine("2 - Alterar Valor");
+      //    Console.WriteLine("3 - Exibir Valores");
+      //    Console.WriteLine("0 - Sair");
+
+      //    Console.Write("\nDigite a opção desejada: ");
+      //    op2 = Console.ReadLine();
+
+      //    if (op2 == "1")
+      //    {
+
+      //    }
+      //    else if (op2 == "2")
+      //    {
+
+      //    }
+      //    else if (op2 == "3")
+      //    {
+
+      //    }
+      //    else if (op2 == "0")
+      //    {
+      //       Console.WriteLine("Saindo do modulo da aplicação....");
+      //    }
+      //    else
+      //    {
+      //       Console.WriteLine("Opção inválida... Tente novamente...");
+      //    }
+      // }
