@@ -8,6 +8,7 @@
 const int N = 5;
 string op = "1", op2 = "1";
 int valor, pos;
+tp_no no = null;
 
 while (op != "0")
 {
@@ -132,7 +133,53 @@ while (op != "0")
     }
     else if (op == "3")
     {
+      tp_no[] vetorTratLista = new tp_no[N];
+      op2 = "1";
+      while (op2 != "0")
+      {
+         Console.WriteLine("\nTRATAMENTO DE COLISÃO COM LISTA ENCADEADA\n");
+         Console.WriteLine("1 - Inserir Valor");
+         Console.WriteLine("2 - Alterar Valor");
+         Console.WriteLine("3 - Exibir Valores");
+         Console.WriteLine("0 - Sair");
 
+         Console.Write("\nDigite a opção desejada: ");
+         op2 = Console.ReadLine();
+
+         if (op2 == "1")
+         {
+            Console.Write("\nValor a ser adicionado: ");
+            valor = Convert.ToInt32(Console.ReadLine());
+            InsereEncadeado(vetorTratLista, valor);
+         }
+         else if (op2 == "2")
+         {
+            Console.Write("\nValor a ser alterado: ");
+            valor = Convert.ToInt32(Console.ReadLine());
+            no = BuscaEncadeada(vetorTratLista, valor);
+            if (no != null)
+            {
+               Console.Write("\nNovo Valor: " + no.chave + no.prox);
+               valor = Convert.ToInt32(Console.ReadLine());
+            }
+            else
+            {
+              Console.WriteLine("Valor não encontrado");
+            }
+         }
+         else if (op2 == "3")
+         {
+            ExibirListaEncadeada(vetorTratLista);
+         }
+         else if (op2 == "0")
+         {
+            Console.WriteLine("Saindo do modulo da aplicação....");
+         }
+         else
+         {
+            Console.WriteLine("Opção inválida... Tente novamente...");
+         }
+      }
     }
     else if (op == "0")
     {
@@ -145,11 +192,12 @@ while (op != "0")
 }
 
 
-
 int Hash(int chave)
 {
    return (chave % N);
 }
+
+
 
 void InsereSemTratamento(int[] v, int c)
 {
@@ -162,9 +210,6 @@ int BuscaSemTratamento(int c)
    int pos = Hash(c);
    return pos;
 }
-
-
-
 
 
 void InsereLinear(int[] v, int c)
@@ -198,6 +243,8 @@ int BuscaLinear(int[] v, int c)
    }
 }
 
+
+
 void InsereEncadeado(tp_no[] v, int c)
 {
    tp_no no = new tp_no();
@@ -208,6 +255,55 @@ void InsereEncadeado(tp_no[] v, int c)
    v[pos] = no;
 }
 
+tp_no BuscaEncadeada(tp_no[] v, int c)
+{
+   tp_no x = null;
+   int pos = Hash(c);
+   for (int i = 0; i < N; i++)
+   {
+      if (v[i] != null)
+      {
+         x = BuscaListaEncadeada(v[i], c);
+      } 
+      if (x != null && x.chave == c)
+      {
+         return x;
+      }
+   }
+   return null;
+}
+
+tp_no BuscaListaEncadeada(tp_no r, int x)
+{
+   if (r == null)
+      return null;
+   else if (x == r.chave)
+      return r;
+   else
+      return BuscaListaEncadeada(r.prox, x);
+}
+
+void ExibirListaEncadeada(tp_no[] r)
+{
+   tp_no x = null;
+   for (int i = 0; i < N; i++)
+   {
+      if (r[i] != null)
+      {
+         x = r[i];
+         PreOrdem(x);
+      } 
+   }
+}
+
+void PreOrdem(tp_no r)
+{
+   if (r != null)
+   {
+      Console.WriteLine(r.chave);
+      PreOrdem(r.prox);
+   }
+}
 
 
 class tp_no
@@ -216,44 +312,3 @@ class tp_no
    public tp_no prox;
 
 }
-
-
-
-
-
-
-
-
-
-      // while (op2 != "0")
-      // {
-      //    Console.WriteLine("\nSEM TRATAMENTO DE COLISÃO\n");
-      //    Console.WriteLine("1 - Inserir Valor");
-      //    Console.WriteLine("2 - Alterar Valor");
-      //    Console.WriteLine("3 - Exibir Valores");
-      //    Console.WriteLine("0 - Sair");
-
-      //    Console.Write("\nDigite a opção desejada: ");
-      //    op2 = Console.ReadLine();
-
-      //    if (op2 == "1")
-      //    {
-
-      //    }
-      //    else if (op2 == "2")
-      //    {
-
-      //    }
-      //    else if (op2 == "3")
-      //    {
-
-      //    }
-      //    else if (op2 == "0")
-      //    {
-      //       Console.WriteLine("Saindo do modulo da aplicação....");
-      //    }
-      //    else
-      //    {
-      //       Console.WriteLine("Opção inválida... Tente novamente...");
-      //    }
-      // }
