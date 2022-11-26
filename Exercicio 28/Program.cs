@@ -39,7 +39,7 @@ while (op != "0")
          {
             Console.Write("\nValor a ser adicionado: ");
             valor = Convert.ToInt32(Console.ReadLine());
-            InsereLinear(vetorSemTratamento,valor);
+            InsereSemTratamento(vetorSemTratamento,valor);
          }
          else if (op2 == "2")
          {
@@ -51,7 +51,7 @@ while (op != "0")
                Console.Write("\nNovo Valor: ");
                valor = Convert.ToInt32(Console.ReadLine());
                vetorSemTratamento[pos] = 0;
-               InsereLinear(vetorSemTratamento,valor);
+               InsereSemTratamento(vetorSemTratamento,valor);
                Console.WriteLine("Valor alterado com sucesso");
             }
             else
@@ -74,11 +74,61 @@ while (op != "0")
             Console.WriteLine("Opção inválida... Tente novamente...");
          }
       }
-
     }
     else if (op == "2")
     {
+      int[] vetorTratLinear = new int[N];
+      op2 = "1";
+      while (op2 != "0")
+      {
+         Console.WriteLine("\nTRATAMENTO DE COLISÃO LINEAR\n");
+         Console.WriteLine("1 - Inserir Valor");
+         Console.WriteLine("2 - Alterar Valor");
+         Console.WriteLine("3 - Exibir Valores");
+         Console.WriteLine("0 - Sair");
 
+         Console.Write("\nDigite a opção desejada: ");
+         op2 = Console.ReadLine();
+
+         if (op2 == "1")
+         {
+            Console.Write("\nValor a ser adicionado: ");
+            valor = Convert.ToInt32(Console.ReadLine());
+            InsereLinear(vetorTratLinear,valor);
+         }
+         else if (op2 == "2")
+         {
+            Console.Write("\nValor a ser alterado: ");
+            valor = Convert.ToInt32(Console.ReadLine());
+            pos = BuscaLinear(vetorTratLinear, valor);
+            if (pos != -1)
+            {
+               Console.Write("\nNovo Valor: ");
+               valor = Convert.ToInt32(Console.ReadLine());
+               vetorTratLinear[pos] = 0;
+               InsereLinear(vetorTratLinear,valor);
+               Console.WriteLine("Valor alterado com sucesso");
+            }
+            else
+            {
+              Console.WriteLine("Valor não encontrado");
+            }
+         }
+         else if (op2 == "3")
+         {
+            foreach(int i in vetorTratLinear){
+               Console.WriteLine(i);
+            }
+         }
+         else if (op2 == "0")
+         {
+            Console.WriteLine("Saindo do modulo da aplicação....");
+         }
+         else
+         {
+            Console.WriteLine("Opção inválida... Tente novamente...");
+         }
+      }
     }
     else if (op == "3")
     {
@@ -126,6 +176,26 @@ void InsereLinear(int[] v, int c)
       pos = pos % N;
    }
    v[pos] = c;
+}
+
+int BuscaLinear(int[] v, int c)
+{
+   int qtd = 0;
+   int pos = Hash(c);
+   while (v[pos] != c && qtd < N)
+   {
+      pos++;
+      pos = pos % N;
+      qtd++;
+   }
+   if (qtd < N)
+   {
+      return pos;   
+   }
+   else
+   {
+      return -1;
+   }
 }
 
 void InsereEncadeado(tp_no[] v, int c)
