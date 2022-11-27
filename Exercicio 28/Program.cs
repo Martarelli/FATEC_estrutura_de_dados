@@ -159,12 +159,14 @@ while (op != "0")
             no = BuscaEncadeada(vetorTratLista, valor);
             if (no != null)
             {
-               Console.Write("\nNovo Valor: " + no.chave + no.prox);
+               Console.Write("\nNovo Valor: ");
                valor = Convert.ToInt32(Console.ReadLine());
+               AlteraListaEncadeada(ref no, valor);
+               Console.WriteLine("Valor alterado com sucesso...");
             }
             else
             {
-              Console.WriteLine("Valor não encontrado");
+              Console.WriteLine("Valor não encontrado...");
             }
          }
          else if (op2 == "3")
@@ -196,7 +198,6 @@ int Hash(int chave)
 {
    return (chave % N);
 }
-
 
 
 void InsereSemTratamento(int[] v, int c)
@@ -244,7 +245,6 @@ int BuscaLinear(int[] v, int c)
 }
 
 
-
 void InsereEncadeado(tp_no[] v, int c)
 {
    tp_no no = new tp_no();
@@ -258,7 +258,6 @@ void InsereEncadeado(tp_no[] v, int c)
 tp_no BuscaEncadeada(tp_no[] v, int c)
 {
    tp_no x = null;
-   int pos = Hash(c);
    for (int i = 0; i < N; i++)
    {
       if (v[i] != null)
@@ -273,24 +272,28 @@ tp_no BuscaEncadeada(tp_no[] v, int c)
    return null;
 }
 
-tp_no BuscaListaEncadeada(tp_no r, int x)
+tp_no BuscaListaEncadeada(tp_no v, int x)
 {
-   if (r == null)
+   if (v == null)
       return null;
-   else if (x == r.chave)
-      return r;
+   else if (x == v.chave)
+      return v;
    else
-      return BuscaListaEncadeada(r.prox, x);
+      return BuscaListaEncadeada(v.prox, x);
 }
 
-void ExibirListaEncadeada(tp_no[] r)
+void AlteraListaEncadeada(ref tp_no v, int x){
+   v.chave = x;
+}
+
+void ExibirListaEncadeada(tp_no[] v)
 {
    tp_no x = null;
    for (int i = 0; i < N; i++)
    {
-      if (r[i] != null)
+      if (v[i] != null)
       {
-         x = r[i];
+         x = v[i];
          PreOrdem(x);
       } 
    }
