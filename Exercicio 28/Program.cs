@@ -160,8 +160,8 @@ while (op != "0")
             if (no != null)
             {
                Console.Write("\nNovo Valor: ");
-               valor = Convert.ToInt32(Console.ReadLine());
-               AlteraListaEncadeada(ref no, valor);
+               int valorAlterar = Convert.ToInt32(Console.ReadLine());
+               no.chave = valorAlterar;
                Console.WriteLine("Valor alterado com sucesso...");
             }
             else
@@ -282,9 +282,6 @@ tp_no BuscaListaEncadeada(tp_no v, int x)
       return BuscaListaEncadeada(v.prox, x);
 }
 
-void AlteraListaEncadeada(ref tp_no v, int x){
-   v.chave = x;
-}
 
 void ExibirListaEncadeada(tp_no[] v)
 {
@@ -307,7 +304,6 @@ void PreOrdem(tp_no r)
       PreOrdem(r.prox);
    }
 }
-
 
 class tp_no
 {
